@@ -13,7 +13,7 @@
 .content {
     border: 1px solid gray;
     display: flex;
-    width: 60%;
+    width: 700px;
     margin: 40px 100px;
     padding: 10px;
 }
@@ -37,4 +37,10 @@
 
 .mb16{
     margin-bottom: 16px;
+}
+
+.autor{
+    width: 350px;
+    display: flex;
+    justify-content: end;
 }
