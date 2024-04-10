@@ -15,7 +15,6 @@ export default function CardDeck(){
             
             {!loading & trilhas != null ? trilhas.map((itemAtual, index) => (
                 <div className="card" key={index}>
-                    {console.log(index)}
                     <CardTrilha trilhas={trilhas[index]}></CardTrilha>
                 </div>
             )) : <h2>Carregando</h2>} 

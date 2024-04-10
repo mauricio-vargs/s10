@@ -5,7 +5,7 @@
             "local" : "Florianópolis/SC",
             "autor" : "Bruno Costa",
             "duracao" : 120,
-            "imagem" : "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/14/c0/91.jpg",
+            "imagem" : "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "trajeto" : 4,
             "nivel" : "iniciante"},
 
@@ -14,7 +14,7 @@
             "local" :"Florianópolis/SC",
             "autor" : "Maurício Vargas",
             "duracao" : 60 ,
-            "imagem" : "https://media-cdn.tripadvisor.com/media/photo-s/0e/99/70/f1/subida-da-trilha.jpg",
+            "imagem" : "https://images.pexels.com/photos/1537582/pexels-photo-1537582.jpeg?auto=compress&cs=tinysrgb&w=600",
             "trajeto": 1.8 ,
             "nivel" : "Iniciante"}
     ]
