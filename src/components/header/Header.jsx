@@ -1,17 +1,19 @@
 import "./header.css"
+import { Link } from "react-router-dom"
 
 export default function Header(){
     return(
         <header className="header">
             
             <div className="name">
-                <a href="#">Adventure Trails FD</a>
+                <Link to="/">Adventure Trails FD</Link>
             </div>
             
 
             <nav className="navbar">
-                <a href="#" className="navigate">Explorar Trilhas</a>
-                <a href="#" className="navigate">Cadastrar trilhas</a>
+                <Link to="/trails">Explorar Trilhas</Link>
+                <Link to="/register" className="navigate">Cadastrar Trilhas</Link>
+                
             </nav>
         </header>
     )
