@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #504908;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.84px;
+    letter-spacing: -0.015em;
+    padding: 0 50px;
+}
+
+.icons {
+    padding: 0 70px;
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 30px;
+}
