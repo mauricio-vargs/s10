@@ -15,7 +15,7 @@ const routers = createBrowserRouter([
                 element : <Home></Home>
             },
             {
-                path : "/sign",
+                path : "/register",
                 element : <Cadastro></Cadastro>
             },
             {
