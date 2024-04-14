@@ -1,17 +1,20 @@
+import { useEffect, useState } from "react"
 import CardTrilha from "../cardTrilha/CardTrilha"
-import useFetch from "../../hooks/useFetch"
+import useFetch from "../../hooks/useFetch.jsx"
+import styles from "./cardDeck.module.css"
 
 export default function CardDeck(){
-    let trilhas = null
+    const [trilhas, setTrilhas] = useState()
     const [json, loading] = useFetch('/data/trilhas.json')
-    if(!loading & json != null){
-        trilhas = json.trilhas
-    }
-    
-   
+    useEffect(() => {
+        if(!loading & json != null){
+            setTrilhas(json.trilhas)
+        }
+    }, [json])
+      
     return(
 
-        <div className="card-deck">
+        <div className={styles.cardDeck}>
             
             {!loading & trilhas != null ? trilhas.map((itemAtual, index) => (
                 <div className="card" key={index}>
@@ -20,7 +23,7 @@ export default function CardDeck(){
             )) : <h2>Carregando</h2>} 
             
             
-            {/* <CardTrilha></CardTrilha> */}
+            
         </div>
     )
 }
