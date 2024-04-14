@@ -1,5 +1,7 @@
-import CardDeck from "./components/cardDeck/CardDeck"
+import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
+import {Outlet} from "react-router-dom"
+import styles from "./app.module.css"
 
 
 
@@ -7,9 +9,10 @@ import Header from "./components/header/Header"
 export default function App(){
 
   return(
-    <div className="container">
+    <div className={styles.container}>
       <Header></Header>
-      <CardDeck></CardDeck>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   )  
 
