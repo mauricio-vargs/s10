@@ -16,23 +16,26 @@ button {
     display: flex;
     width: 700px;
     margin: 40px 100px;
+    padding-right: 5px;
     
    
 }
 
 .description {
-    padding: 0 10px;
+    padding: 0 0px;
+    width: 100%;
 }
 
 .img {
     height:200px;
-    width: 300px;
+    min-width: 300px;
+    padding-right: 5px;
 }
 .cardHeader {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
     align-items: center;
-    font-weight: bold;
+
 }
 .review {
     display: flex;
@@ -42,16 +45,19 @@ button {
 }
 .level {
     background-color: #EFF0F0;
-    width: 60px;
+    width: 80px;
     padding: 5px;
     border-radius: 20px;
+    text-align: center;
 }
 
 
 .autor{
-    width: 350px;
+    width: 100%;
     display: flex;
     justify-content: end;
+
+
 }
 .mb16{
     margin-bottom: 16px;

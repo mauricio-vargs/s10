@@ -7,7 +7,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 
 export default function CardTrilha(props){
-  let {nome, imagem, local, duracao, trajeto, nivel,autor} = props.trilhas
+  let {nome, imagem, cidade, estado, duracao, trajeto, nivel} = props.trilhas
+  let autor
+  props.trilhas.autor == "" ? autor = "Anônimo" : autor = props.trilhas.autor
   const [favorite, setFavorite] = useState(false)
   function handleClickFavorite(){
     setFavorite(!favorite)
@@ -18,7 +20,7 @@ export default function CardTrilha(props){
           <img src={imagem} className={styles.img} />
           <div className={styles.description}>
             <div className={`${styles.cardHeader} ${styles.mb16}`}>
-            <h1>{nome} - {local}</h1> 
+            <h1>{nome} - {cidade} / {estado}</h1> 
             <button onClick={() => handleClickFavorite()}>{favorite ? <FavoriteIcon/>: <FavoriteBorderIcon/>}</button>
             </div>
             <div className={styles.autor}>
