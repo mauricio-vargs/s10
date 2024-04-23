@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import Lista from "./pages/lista/Lista";
-import Home from "./pages/home/Home";
-import Cadastro from "./pages/cadastro/Cadastro";
-import App from "./App";
+import Lista from "../pages/lista/Lista";
+import Home from "../pages/home/Home";
+import Cadastro from "../pages/cadastro/Cadastro";
+import App from "../App";
 
 
-const routers = createBrowserRouter([
+const routes = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
@@ -26,4 +26,4 @@ const routers = createBrowserRouter([
     }
     ])
     
-export default routers
+export default routes

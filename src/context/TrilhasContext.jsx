@@ -5,15 +5,19 @@ export const TrilhasContext = createContext()
 
 export const TrilhasContextProvider = ({children}) => {
     const [trilhas, setTrilhas] = useState()
-    const [json, loading] = useFetch('/data/trilhas.json')
+    const [json, loading] = useFetch('/trilhas.json')
     useEffect(() => {
         if(!loading & json != null){
             setTrilhas(json.trilhas)
         }
     }, [json])
 
+    function addTrail(newTrail) {
+        setTrilhas(t => [...t, newTrail])
+    }
+
     return (
-        <TrilhasContext.Provider value={{trilhas, setTrilhas}}>
+        <TrilhasContext.Provider value={{trilhas, setTrilhas, addTrail}}>
             {children}
         </TrilhasContext.Provider>
     )
