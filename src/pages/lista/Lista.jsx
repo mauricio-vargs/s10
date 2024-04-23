@@ -7,9 +7,8 @@ export default function Lista(){
         
         <div className={styles.trails}>
             
-                <div className={styles.image}> 
-                
-                </div>
+            <div className={styles.image}> 
+             </div>
         
             <span className={styles.title}>Explore trilhas incríveis</span>
             <CardDeck></CardDeck>
